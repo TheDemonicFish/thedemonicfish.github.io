@@ -1,0 +1,150 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+body {
+  color: #a5a5a5;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-feature-settings: "kern", "liga", "pnum";
+  font-size: 16px;
+  line-height: 1.5; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+  font-size: 22px;
+  line-height: 1.2;
+  margin: 0 0 0.75em;
+  color: #000000; }
+
+p {
+  margin: 0 0 0.75em; }
+
+a {
+  color: #a5a5a5;
+  text-decoration: none;
+  transition: color 150ms ease; }
+  a:active, a:focus, a:hover {
+    color: #7c7c7c; }
+
+/* nemo:start of my style sheet */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  width: auto; }
+
+body {
+  background-color: #2ecc71;
+  margin-top: 10px; }
+
+header {
+  width: 100%;
+  background-color: pink;
+  background-image: url("../img/header-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-origin: border-box;
+  overflow: auto; }
+  header .container {
+    margin: 0 auto;
+    padding: 175px 20px; }
+    header .container p {
+      margin: 25px 0;
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+      width: 55%; }
+    header .container .platform {
+      background: rgba(0, 0, 0, 0.45);
+      padding: 12px;
+      border-bottom-right-radius: 50%;
+      border-top-right-radius: 50%;
+      border-bottom-left-radius: 50%;
+      border-top-left-radius: 50%;
+      margin: 0 5px;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+    header .container .platform:hover {
+      background: #2ecc71; }
+
+section#features {
+  background-color: #ffffff;
+  padding: 60px 100px; }
+  section#features .container {
+    width: 1200px;
+    margin: 0 auto; }
+  section#features .item {
+    float: left;
+    width: 400px;
+    padding: 0 20px; }
+  section#features::after {
+    clear: both;
+    content: "";
+    display: table; }
+  section#features img {
+    padding: 20px;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    background-color: #2ecc71; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,67 @@
+section.testimonials
+  .content, .names
+    display: none
+
+  .test
+    padding-top: 30px
+    .test-display, .test-name, .test-belt
+      text-align: center
+      max-width: 960px
+      min-width: 260px
+      margin: 20px auto 0
+      padding: 5px
+    .test-display
+      +transition()
+    .test-name
+      color: #000000
+      font-size: 18px
+      font-weight: bold
+    .test-belt
+      text-align: center
+      .test-thumb
+        position: relative
+        +size(50px)
+        img
+          width: 100%
+          height: 100%
+          vertical-align: top
+      .test-thumb:after
+        content: '\A'
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        background: rgba(46,204,113,0.6)
+        opacity: 0
+        transition: all 1s
+        -webkit-transition: all 1s
+      .test-thumb:hover:after
+        opacity: 1
+      .test-thumb
+        display: inline-block
+        cursor: pointer
+        margin: 1px
+
+  .get-in-touch
+    text-align: center
+    padding-top: 50px
+    padding-bottom: 50px
+
+  .smicons
+    width: 280px
+    vertical-align: baseline
+    margin: 30px auto
+    .smicon
+      margin-right: 6px
+      padding-top: 10px
+      text-align: center
+      background-color: #d4d4d4
+      +size(40px)
+      display: block
+      float: left
+      border-radius: 50%
+      +transition()
+      cursor: pointer
+    .smicon:hover
+      background-color: $brand-green

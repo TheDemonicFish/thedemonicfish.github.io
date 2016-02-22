@@ -1,0 +1,50 @@
+section.notifications
+  width: 100%
+  background-color: $secondary-background-color
+  overflow: hidden
+
+
+  .col-md-6
+    padding: 60px
+    overflow: hidden
+    p
+      color: #848484
+      margin-bottom: 30px
+    form
+      min-width: 240px
+      margin: 0 auto
+
+      input[type="email"]
+        display: inline-block
+        max-width: 240px
+        height: 60px
+        border-radius: 0
+        +border-left-radius(17px)
+
+      input[type="button"]
+        color: #ffffff
+        background-color: $brand-green
+        width: 130px
+        display: inline-block
+        height: 58px
+        border: none
+        font-size: 22px
+        font-weight: bold
+        font-family: 'Raleway'
+        +border-right-radius(17px)
+
+      @media all and (max-width: 600px)
+        input[type="email"]
+          display:block
+          max-width: 100%
+          height: 60px
+          border-radius: 17px
+        input[type="button"]
+          display: block
+          width: 180px
+          margin: 0 auto
+          border-radius: 17px
+    .video
+      img
+        max-width: 100%
+        height: auto
